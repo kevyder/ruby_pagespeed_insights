@@ -1,9 +1,9 @@
-RSpec.describe Ruby::Pagespeed::Insights do
+RSpec.describe PagespeedInsights do
   it "has a version number" do
-    expect(Ruby::Pagespeed::Insights::VERSION).not_to be nil
+    expect(PagespeedInsights::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "has API v5 class wrapper" do
+    expect(PagespeedInsights::V5).not_to be nil
   end
 end

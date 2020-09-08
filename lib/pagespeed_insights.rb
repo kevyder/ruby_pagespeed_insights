@@ -1,6 +1,5 @@
-require "pagespeed_insights/version"
+require 'pagespeed_insights/version'
+require 'v5/api_v5'
 
-module PagespeedInsights
-  class Error < StandardError; end
-  # Your code goes here...
-end
+# Basic module
+module PagespeedInsights; end
