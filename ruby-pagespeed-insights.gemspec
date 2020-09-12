@@ -41,4 +41,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pre-commit', '~> 0.39.0'
   spec.add_development_dependency 'rubocop', '~> 0.90.0'
   spec.add_development_dependency 'rubocop-rspec', '~> 1.43', '>= 1.43.2'
+  spec.add_development_dependency 'dotenv', '~> 2.7', '>= 2.7.6'
 end

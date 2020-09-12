@@ -1,7 +1,11 @@
+# frozen_string_literal: true
+
 require 'bundler/setup'
 require 'pagespeed_insights'
 require 'simplecov'
+require 'dotenv/load'
 
+Dotenv.load
 SimpleCov.start
 
 RSpec.configure do |config|
