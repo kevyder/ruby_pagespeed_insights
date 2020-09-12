@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'A Ruby wrapper for Google PageSpeed Insights API.'
   spec.homepage      = 'https://github.com/kevyder/ruby_pagespeed_insights'
   spec.license       = 'MIT'
-  spec.required_ruby_version = '>= 2.5'
+  spec.required_ruby_version = '>= 2.4'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -38,9 +38,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.17', '>= 1.17.3'
   spec.add_development_dependency 'rake', '~> 12.3', '>= 12.3.3'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'simplecov', '~> 0.19.0'
-  spec.add_development_dependency 'pre-commit', '~> 0.39.0'
-  spec.add_development_dependency 'rubocop', '~> 0.90.0'
-  spec.add_development_dependency 'rubocop-rspec', '~> 1.43', '>= 1.43.2'
-  spec.add_development_dependency 'dotenv', '~> 2.7', '>= 2.7.6'
 end

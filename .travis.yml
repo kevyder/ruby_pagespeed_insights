@@ -6,6 +6,7 @@ rvm:
   - 2.7.1
   - 2.6.3
   - 2.5.5
+  - 2.4.10
 before_install:
   - gem i rubygems-update -v '3.1.2' && update_rubygems
   - gem i bundler -v '1.17.3'

@@ -4,9 +4,11 @@ require 'bundler/setup'
 require 'pagespeed_insights'
 require 'simplecov'
 require 'dotenv/load'
+require 'coveralls'
 
 Dotenv.load
 SimpleCov.start
+Coveralls.wear!
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
