@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'pagespeed_insights/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'ruby-pagespeed-insights'
+  spec.name          = 'ruby_pagespeed_insights'
   spec.version       = PagespeedInsights::VERSION
   spec.authors       = ['Kevin Rodriguez']
   spec.email         = ['kyrodriguez97@gmail.com']
@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'A Ruby wrapper for Google PageSpeed Insights API.'
   spec.homepage      = 'https://github.com/kevyder/ruby_pagespeed_insights'
   spec.license       = 'MIT'
+  spec.required_ruby_version = '>= 2.5'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
   # to allow pushing to a single host or delete this section to allow pushing to any host.

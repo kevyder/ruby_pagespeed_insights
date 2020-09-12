@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ruby-pagespeed-insights (0.1.0)
+    ruby_pagespeed_insights (0.1.0)
       faraday (~> 1.0, >= 1.0.1)
       json (~> 2.3, >= 2.3.0)
 
@@ -70,7 +70,7 @@ DEPENDENCIES
   rspec (~> 3.0)
   rubocop (~> 0.90.0)
   rubocop-rspec (~> 1.43, >= 1.43.2)
-  ruby-pagespeed-insights!
+  ruby_pagespeed_insights!
   simplecov (~> 0.19.0)
 
 BUNDLED WITH
