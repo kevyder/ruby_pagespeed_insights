@@ -63,7 +63,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.17)
+  bundler (~> 1.17, >= 1.17.3)
   dotenv (~> 2.7, >= 2.7.6)
   pre-commit (~> 0.39.0)
   rake (~> 12.3, >= 12.3.3)
