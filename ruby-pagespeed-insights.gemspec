@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Kevin Rodriguez']
   spec.email         = ['kyrodriguez97@gmail.com']
 
-  spec.summary       = 'A Ruby wrapper for the PageSpeed Insights API.'
+  spec.summary       = 'A Ruby wrapper for Google PageSpeed Insights API.'
   spec.description   = 'A Ruby wrapper for Google PageSpeed Insights API.'
   spec.homepage      = 'https://github.com/kevyder/ruby_pagespeed_insights'
   spec.license       = 'MIT'

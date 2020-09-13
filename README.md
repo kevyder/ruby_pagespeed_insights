@@ -1,28 +1,55 @@
 # Ruby Pagespeed Insights
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pagespeed_insights`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Gem Version](https://badge.fury.io/rb/ruby_pagespeed_insights.svg)](https://rubygems.org/gems/ruby_pagespeed_insights) [![Build Status](https://travis-ci.org/kevyder/ruby_pagespeed_insights.svg?branch=master)](https://travis-ci.org/kevyder/ruby_pagespeed_insights) [![Coverage Status](https://coveralls.io/repos/github/kevyder/ruby_pagespeed_insights/badge.svg?branch=master)](https://coveralls.io/github/kevyder/ruby_pagespeed_insights?branch=master) [![Gem](https://img.shields.io/gem/dt/ruby_pagespeed_insights)](https://rubygems.org/gems/ruby_pagespeed_insights) ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/kevyder/ruby_pagespeed_insights)
 
-TODO: Delete this and the text above, and describe your gem
+A Ruby wrapper for Google PageSpeed Insights API.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ruby-pagespeed-insights'
+gem 'ruby_pagespeed_insights'
 ```
 
 And then execute:
 
-    $ bundle
+```bash
+ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install ruby-pagespeed-insights
+```bash
+ gem install ruby_pagespeed_insights
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+Once installed, you have to get your `API key` in the [Google Developers Console](https://developers.google.com/speed/docs/insights/v5/get-started) and then you can start to using the library.
+
+### [API Version 5](https://developers.google.com/speed/docs/insights/v5/reference/pagespeedapi/runpagespeed)
+
+```ruby
+request = PagespeedInsights::V5.new(
+  url: 'http://site.com',
+  key: 'your api key',
+  strategy: 'desktop',
+  categories: 'seo'
+)
+
+response = request.results
+response.status   # response code status
+response.headers  # response headers
+response.body     # response body content
+```
+
+param      | default value | allowed values                                                 | optional?
+-----------| ------------- | -------------------------------------------------------------- | ---------
+url        | `none`        |                                                                | `false`
+key        | `none`        |                                                                | `false`
+strategy   | `none`        | `desktop`, `mobile`                                            | `true`
+categories | `none`        | `accessibility`, `best-practices`, `performance`, `pwa`, `seo` | `true`
 
 ## Development
 
@@ -32,7 +59,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ruby-pagespeed-insights. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at <https://github.com/kevyder/ruby_pagespeed_insights>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -40,4 +67,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Ruby::Pagespeed::Insights project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/kevyder/ruby-pagespeed-insights/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Ruby Pagespeed Insights project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/kevyder/ruby_pagespeed_insights/blob/master/CODE_OF_CONDUCT.md).
