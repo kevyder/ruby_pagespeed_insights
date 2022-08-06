@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'A Ruby wrapper for Google PageSpeed Insights API.'
   spec.homepage      = 'https://github.com/kevyder/ruby_pagespeed_insights'
   spec.license       = 'MIT'
-  spec.required_ruby_version = '>= 2.4'
+  spec.required_ruby_version = '>= 2.6'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -32,10 +32,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'faraday', '~> 1.0', '>= 1.0.1'
-  spec.add_runtime_dependency 'json', '~> 2.3', '>= 2.3.0'
+  spec.add_runtime_dependency 'faraday', '~> 2.4'
+  spec.add_runtime_dependency 'json', '~> 2.6', '>= 2.6.2'
 
-  spec.add_development_dependency 'bundler', '~> 1.17', '>= 1.17.3'
-  spec.add_development_dependency 'rake', '~> 12.3', '>= 12.3.3'
-  spec.add_development_dependency 'rspec', '~> 3.0'
+  spec.add_development_dependency 'bundler', '~> 2.3', '>= 2.3.19'
+  spec.add_development_dependency 'rake', '~> 13.0', '>= 13.0.6'
+  spec.add_development_dependency 'rspec', '~> 3.11'
 end

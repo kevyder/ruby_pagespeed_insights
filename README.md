@@ -31,11 +31,13 @@ Once installed, you have to get your `API key` in the [Google Developers Console
 ### [API Version 5](https://developers.google.com/speed/docs/insights/v5/reference/pagespeedapi/runpagespeed)
 
 ```ruby
+require 'pagespeed_insights'
+
 request = PagespeedInsights::V5.new(
   url: 'http://site.com',
   key: 'your api key',
   strategy: 'desktop',
-  categories: 'seo'
+  categories: ['seo', 'pwa']
 )
 
 response = request.results
