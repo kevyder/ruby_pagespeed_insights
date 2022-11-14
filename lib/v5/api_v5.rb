@@ -17,7 +17,6 @@ module PagespeedInsights
     end
 
     def results(fields: nil, pretty_print: true)
-      parse_categories
       uri_params = uri_params_generator(fields, pretty_print)
       make_request(uri_params)
     end
@@ -31,7 +30,7 @@ module PagespeedInsights
     def uri_params_generator(fields, pretty_print)
       uri_params = { key: @key, url: @url, pretty_print: pretty_print }
       uri_params[:strategy] = @strategy if @strategy
-      uri_params[:category] = @categories if @categories
+      uri_params[:category] = parse_categories if @categories
       uri_params[:fields] = fields if fields
       uri_params
     end
