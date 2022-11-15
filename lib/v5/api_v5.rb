@@ -38,7 +38,9 @@ module PagespeedInsights
 
     def make_request(uri_params)
       headers = { 'Accept': 'application/json' }
-      response = Faraday.get(@base_url, uri_params, headers)
+      response = Faraday.get(@base_url, uri_params, headers) do |req|
+        req.options.params_encoder = Faraday::FlatParamsEncoder
+      end
       @status = response.status
       @headers = response.headers
       @body = response.body
