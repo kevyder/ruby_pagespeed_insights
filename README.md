@@ -1,6 +1,9 @@
 # Ruby Pagespeed Insights
 
-[![Gem Version](https://badge.fury.io/rb/ruby_pagespeed_insights.svg)](https://rubygems.org/gems/ruby_pagespeed_insights) [![Build Status](https://travis-ci.org/kevyder/ruby_pagespeed_insights.svg?branch=master)](https://travis-ci.org/kevyder/ruby_pagespeed_insights) [![Coverage Status](https://coveralls.io/repos/github/kevyder/ruby_pagespeed_insights/badge.svg?branch=master)](https://coveralls.io/github/kevyder/ruby_pagespeed_insights?branch=master) [![Gem](https://img.shields.io/gem/dt/ruby_pagespeed_insights)](https://rubygems.org/gems/ruby_pagespeed_insights) ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/kevyder/ruby_pagespeed_insights)
+[![Gem Version](https://badge.fury.io/rb/ruby_pagespeed_insights.svg)](https://rubygems.org/gems/ruby_pagespeed_insights)
+[![Coverage Status](https://coveralls.io/repos/github/kevyder/ruby_pagespeed_insights/badge.svg?branch=master)](https://coveralls.io/github/kevyder/ruby_pagespeed_insights?branch=master) 
+[![Gem](https://img.shields.io/gem/dt/ruby_pagespeed_insights)](https://rubygems.org/gems/ruby_pagespeed_insights) 
+![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/kevyder/ruby_pagespeed_insights)
 
 A Ruby wrapper for Google PageSpeed Insights API.
 
